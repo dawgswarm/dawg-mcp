@@ -1,0 +1,18 @@
+# Add this block to ~/.codex/config.toml to register the DAWG MCP server.
+
+# From PyPI via uvx (recommended):
+[mcp_servers.dawg]
+command = "uvx"
+args = ["dawg-mcp"]
+
+[mcp_servers.dawg.env]
+DAWG_API_KEY = "your_api_key_here"
+DAWG_BASE_URL = "https://dawgswarm.ru"
+
+# --- Local development (run from a working tree) ---
+# [mcp_servers.dawg]
+# command = "uv"
+# args = ["run", "--directory", "/path/to/dawg-mcp", "dawg-mcp"]
+#
+# [mcp_servers.dawg.env]
+# DAWG_API_KEY = "your_api_key_here"

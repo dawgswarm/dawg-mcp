@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "dawg": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["dawg-mcp"],
+      "env": {
+        "DAWG_API_KEY": "${DAWG_API_KEY}",
+        "DAWG_BASE_URL": "${DAWG_BASE_URL:-https://dawgswarm.ru}"
+      }
+    }
+  }
+}
